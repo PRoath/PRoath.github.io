@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*
+   Delicious Sweets
+   Author:   Penny Roath
+   Date:     
+   
+   Filename: styles.css
+   
+   This file contains the layout styles used in the Delicious Sweets website.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+
+/* Body Header Styles */
+
+
+/* Horizonal Navigation Styles */
+
+
+/* Section Styles */
+
+
+/* Footer Styles */
+
+
+
+/*  ===============================
+    Mobile Styles: 0px to 480px
+    ===============================
+*/
+@media only screen and (max-width: 480px) {
+	
+}
+/*  ===============================
+    Tablet Styles: 481px and greater
+    ===============================
+*/
+@media only screen and (min-width: 481px) {
+	
+}
+
+/*  ===============================
+    Desktop Styles: 769px and greater
+    ===============================
+*/
+@media only screen and (min-width: 769px) {
+	
+}
+
