@@ -18,41 +18,98 @@
 
 
 /* HTML and Body Styles */
+html {
+	background: rgb(249,109,109);
+}
 
+body {
+	background: rgb(180,180,223);
+	border-left: 1px solid rgb(153, 0, 153);
+	border-right: 1px solid rgb(153, 0, 153);
+	margin: auto;
+	min-height: 100vh;
+	min-width: 320px;
+	max-width: 1200px;
+	padding: auto;
+}
 
+h1 {
+	display: block;
+	margin: auto;
+}
+
+p {
+	text-align: center;
+}
 /* Body Header Styles */
-
+header img {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
 
 /* Horizonal Navigation Styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(143,177,233);
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav ul li a:hover {
+  background-color: rgb(68,114,196);
+}
+
+.active {
+  background-color: rgb(68,114,196);
+}
 
 
 /* Section Styles */
-
+iframe {
+	display: block;
+	margin: auto;
+}
 
 /* Footer Styles */
-
-
-
-/*  ===============================
-    Mobile Styles: 0px to 480px
-    ===============================
-*/
-@media only screen and (max-width: 480px) {
-	
-}
-/*  ===============================
-    Tablet Styles: 481px and greater
-    ===============================
-*/
-@media only screen and (min-width: 481px) {
-	
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(80,113,123);
+  color: white;
+  text-align: center;
 }
 
-/*  ===============================
-    Desktop Styles: 769px and greater
-    ===============================
-*/
-@media only screen and (min-width: 769px) {
-	
+.fa {
+	padding: 20px;
+	width: 10px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
 }
 
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
