@@ -30,12 +30,13 @@ body {
 	min-height: 100vh;
 	min-width: 320px;
 	max-width: 1200px;
-	padding: auto;
+	padding: 10px;
 }
 
 h1 {
 	display: block;
 	margin: auto;
+	padding-top: 10px;
 }
 
 p {
@@ -85,6 +86,26 @@ iframe {
 	margin: auto;
 }
 
+table#cupcake {
+	background-color: rgb(97,97,211);
+}
+
+table#cupcake, th, td {
+	border: 1px solid black;
+	border-spacing: 20px;
+	margin: auto;
+}
+
+table#cupcake th {
+	background-color: rgb(249,109,109);
+	border-radius: 10px;
+}
+
+table#cupcake caption {
+	font-size: 50px;
+	margin-top: 25px;
+}
+
 /* Footer Styles */
 footer {
   position: fixed;
@@ -94,6 +115,11 @@ footer {
   background-color: rgb(80,113,123);
   color: white;
   text-align: center;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
 }
 
 .fa {
