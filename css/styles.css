@@ -81,9 +81,18 @@ nav ul li a:hover {
 
 
 /* Section Styles */
+h1.aboutUs {
+	color: rgb(200,30,188);
+	font-size: 4em;
+}
+
 iframe {
 	display: block;
 	margin: auto;
+}
+p.aboutUs {
+	font-size: 1.2em;
+	text-align: center;
 }
 
 table#cupcake {
@@ -106,6 +115,25 @@ table#cupcake caption {
 	margin-top: 25px;
 }
 
+table#aboutTable {
+	border-collapse: collapse;
+	margin-top: 50px;
+	width: 100%;
+}
+
+
+table#aboutTable th {
+	background: rgb(200,30,188);
+	font-size: 1.5em;
+	width: 50%;
+}
+
+table#aboutTable td {
+	background: rgb(153,217,234);
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+}
 /* Footer Styles */
 footer {
   position: fixed;
