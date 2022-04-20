@@ -20,6 +20,8 @@
 /* HTML and Body Styles */
 html {
 	background: rgb(249,109,109);
+	height: 100%;
+	box-sizing: border-box;
 }
 
 body {
@@ -27,10 +29,12 @@ body {
 	border-left: 1px solid rgb(153, 0, 153);
 	border-right: 1px solid rgb(153, 0, 153);
 	margin: auto;
-	min-height: 100vh;
+	min-height: 100%;
 	min-width: 320px;
 	max-width: 1200px;
 	padding: 10px;
+	padding-bottom: 6rem;
+	position: relative;
 }
 
 h1 {
@@ -53,6 +57,7 @@ header img {
 nav ul {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   overflow: hidden;
   background-color: rgb(143,177,233);
@@ -80,27 +85,21 @@ nav ul li a:hover {
 }
 
 
-/* Section Styles */
-h1.aboutUs {
-	color: rgb(200,30,188);
-	font-size: 4em;
-}
-
 iframe {
 	display: block;
 	margin: auto;
 }
-p.aboutUs {
-	font-size: 1.2em;
-	text-align: center;
-}
+
+/* Cupcake Table */
 
 table#cupcake {
 	background-color: rgb(97,97,211);
+	border-radius: 20px;
 }
 
 table#cupcake, th, td {
 	border: 1px solid black;
+	
 	border-spacing: 20px;
 	margin: auto;
 }
@@ -113,6 +112,18 @@ table#cupcake th {
 table#cupcake caption {
 	font-size: 50px;
 	margin-top: 25px;
+}
+
+
+/* About Us */
+h1.aboutUs {
+	color: rgb(200,30,188);
+	font-size: 4em;
+}
+
+p.aboutUs {
+	font-size: 1.2em;
+	text-align: center;
 }
 
 table#aboutTable {
@@ -134,9 +145,50 @@ table#aboutTable td {
 	padding: 10px;
 	text-align: center;
 }
+
+/* Contact Us Form */
+
+form#contact > fieldset {
+	background-color: rgb(153,217,234);
+	border-radius: 20px;
+	height: 80vh;
+	padding: 10px;
+}
+
+legend {
+	background-color: rgb(97,97,211);
+	color: white;
+	padding: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: none;
+}
+
+
+
+input[type='submit'] {
+	background-color: rgb(249,109,109);
+	color: #3B5998;
+	cursor: pointer;
+	font-size: 1.5em;
+	padding: 5px;	
+	margin: 15px;
+	text-align: center;
+	width: 20%;
+}
+
 /* Footer Styles */
 footer {
-  position: fixed;
+  height: 8vh;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
