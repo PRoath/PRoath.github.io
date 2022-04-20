@@ -24,7 +24,7 @@ fictional.
 </head>
 <body>
 <!-- The header is where your logo and navigation is created, replace the image and the links with your project images and links  -->
-  <header>
+  <header> 
 	<a href="index.html">
 		<img src="images/delicious_sweets_logo.png" alt="Delicious Sweets Logo" />
 	</a>
@@ -32,33 +32,41 @@ fictional.
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="cupcakes.html">Cupcakes</a></li>
-			<li><a href="about_us.html" class="active">About Us</a></li>
-			<li><a href="contact_us.html">Contact Us</a></li>
+			<li><a href="about_us.html">About Us</a></li>
+			<li><a href="contact_us.html"  class="active">Contact Us</a></li>
 		</ul>
 	</nav>
 	</header>
 	
-	<h1 class="aboutUs"> About Us! </h1>
-	
-	<p class="aboutUs">
-		My name is Penny, and I am the owner of Delicious Sweets.  
-		This little shop is in Lincoln, NE.  We make cupcakes to order, or you can stop by the shop and pick up a few. 
-		Our flavors are out of this world delicious.  
-		Our location is close to town, and we have a staff of 11.  
-		Our staff are college kids working toward their degrees and enjoying a small business type atmosphere while earning money to further their education expenses.
-	</p>
-	
-	<table id="aboutTable">
-		<tr>
-			<th> Location </th>
-			<th> Hours </th>
-		<tr>
-			<td>1111 Q Street <br>
-				Lincoln, Ne 68523</td>
-			<td>Monday – Friday: 9:00 to 6:00 <br>
-				Saturdays: 9:00 to 4:00 <br>
-				Sunday: CLOSED</td>
-	</table>
+	<form id="contact" method="post">
+		<fieldset id="contactInfo">
+			<legend>Contact Info</legend>
+				<div class="formRow">
+					<label for="firstName">First Name*</label>
+					<input name="firstName" id="firstName" type="text" placeholder="First Name" required  />
+				</div>
+				<div class="formRow">
+					<label for="lastName">Last Name*</label>
+					<input name="lastName" id="lastName" type="text" placeholder="Last Name" required  />
+				</div>
+				<div class="formRow">
+					<label for="phone">Phone number</label>
+					<input name="custPhone" id="phone" type="tel" placeholder="(***) ***-****" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+				</div>
+				
+				<div class="formRow">
+					<label for="mail">E-mail*</label>
+					<input name="custEmail" id="mail" type="email" placeholder="E-mail" required />
+				</div>
+				<div class="formRow">
+					<label for="comments">Comments*</label>
+					<textarea name="Comments" id="comments" placeholder="Enter your comments here" rows="7" required></textarea>
+				</div>
+				<div>
+					<input type="submit" value="Send" />
+				</div>
+		</fieldset>		
+	  </form>
 	
 	<footer>
 		<a href ="index.html">Delicious Sweets <sup>&#169;</sup> </a> &#8226; 
